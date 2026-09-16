@@ -81,6 +81,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<jvmArguments>-Djava.security.properties=${project.basedir}/tls-legacy.security</jvmArguments>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
